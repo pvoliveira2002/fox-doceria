@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fox Doceria</title>
+    <meta
+      name="description"
+      content="Doces artesanais da Fox Doceria vendidos no Colegio Centro Educacional MAARA."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Cabecalho">
+      <a class="brand" href="#inicio" aria-label="Fox Doceria">
+        <img src="imagens/FOXDOCERIA.png" alt="Logo Fox Doceria" />
+      </a>
+      <nav class="nav-links" aria-label="Navegacao principal">
+        <a href="#destaque">Destaque</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#onde-comprar">Onde comprar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <h1>Doces feitos com carinho para adoçar seus dias.</h1>
+          <p class="hero-text">
+            Conheça nossos produtos e acompanhe os destaques da semana.
+          </p>
+          <a class="primary-button" href="#produtos">Ver Produtos</a>
+        </div>
+      </section>
+
+      <section id="destaque" class="section weekly-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Destaque da Semana</p>
+          <h2>Bolo de Chocolate Especial</h2>
+        </div>
+
+        <article class="featured-card reveal">
+          <div class="featured-image">
+            <img
+              src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=1200&q=85"
+              alt="Fatia de bolo de chocolate artesanal"
+            />
+          </div>
+          <div class="featured-copy">
+            <span class="tag">Mais pedido</span>
+            <h3>Bolo de Chocolate Especial</h3>
+            <p>
+              Nosso bolo mais vendido da semana: massa fofinha, cobertura cremosa e
+              sabor de chocolate na medida certa.
+            </p>
+            <strong>R$ 5,00</strong>
+          </div>
+        </article>
+      </section>
+
+      <section id="produtos" class="section products-section">
+        <div class="products-top reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Conheça nossos produtos</p>
+            <h2>Delícias artesanais para deixar o seu intervalo mais gostoso.</h2>
+          </div>
+          <div class="carousel-controls" aria-label="Controles do carrossel de produtos">
+            <button class="carousel-button" type="button" data-carousel-prev aria-label="Produto anterior">
+              &lsaquo;
+            </button>
+            <button class="carousel-button" type="button" data-carousel-next aria-label="Próximo produto">
+              &rsaquo;
+            </button>
+          </div>
+        </div>
+
+        <div class="product-carousel reveal" aria-label="Carrossel de produtos">
+          <div class="product-track" data-product-track>
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=900&q=85"
+              alt="Torta de limao artesanal"
+            />
+            <div class="product-info">
+              <h3>Torta de Limão (Sem Chantili)</h3>
+              <p>Base crocante, creme cítrico e final delicado para quem ama frescor.</p>
+              <strong>R$ 4,00</strong>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="imagens/torta-limao-chantili.png"
+              alt="Torta de limão com cobertura de chantili"
+            />
+            <div class="product-info">
+              <h3>Torta de Limão (Com Chantili)</h3>
+              <p>O azedinho clássico com uma camada leve e cremosa de chantili.</p>
+              <strong>R$ 4,50</strong>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=1200&q=85"
+              alt="Bolo de chocolate com cobertura"
+            />
+            <div class="product-info">
+              <h3>Bolo de Chocolate</h3>
+              <p>Chocolate intenso, massa macia e cobertura generosa em cada pedaço.</p>
+              <strong>R$ 5,00</strong>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/05/08/14/31/carrot-cake-3383170_1280.jpg"
+              alt="Bolo de cenoura com calda de chocolate"
+            />
+            <div class="product-info">
+              <h3>Bolo de Cenoura</h3>
+              <p>Clássico caseiro com cobertura de chocolate e aquele gosto de afeto.</p>
+              <strong>R$ 5,00</strong>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=88"
+              alt="Brownies de chocolate"
+            />
+            <div class="product-info">
+              <h3>Brownie</h3>
+              <p>Crocante por fora, molhadinho por dentro e perfeito para adoçar o dia.</p>
+              <strong>R$ 4,00</strong>
+            </div>
+          </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="onde-comprar" class="location-experience">
+        <div class="location-inner">
+          <div class="location-intro reveal">
+            <p class="eyebrow">Onde Comprar</p>
+            <h2>Seu doce da semana te espera no MAARA.</h2>
+            <p>
+              Todos os produtos da Fox Doceria são vendidos presencialmente no
+              Colégio Centro Educacional MAARA, com fornadas preparadas para o
+              intervalo de quinta e sexta.
+            </p>
+            <a class="ghost-button" href="#produtos">Escolher meu doce</a>
+          </div>
+
+          <div class="store-locator reveal" aria-label="Informações de compra">
+            <div class="search-panel">
+              <span>Local de venda</span>
+              <strong>Colégio Centro Educacional MAARA</strong>
+              <p>Procure a Fox Doceria nos dias de venda e veja os destaques disponíveis.</p>
+            </div>
+
+            <div class="schedule-grid">
+              <article>
+                <span>Quinta-feira</span>
+                <strong>Produtos fresquinhos</strong>
+                <p>Tortas, bolos e brownie para adoçar o intervalo.</p>
+              </article>
+              <article>
+                <span>Sexta-feira</span>
+                <strong>Destaques da semana</strong>
+                <p>As opções mais pedidas voltam para fechar a semana bem.</p>
+              </article>
+            </div>
+
+            <div class="mini-map" aria-hidden="true">
+              <div class="map-pin map-pin-main"></div>
+              <div class="map-pin map-pin-soft"></div>
+              <div class="route-line"></div>
+              <span class="map-label">MAARA</span>
+              <span class="map-badge">Doces aqui</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="imagens/FOXDOCERIA.png" alt="Logo Fox Doceria" />
+      <p>Feito com carinho pela Fox Doceria.</p>
+      <div class="social-links" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="WhatsApp">WA</a>
+      </div>
+      <small>© 2026 Fox Doceria. Todos os direitos reservados.</small>
+    </footer>
+  </body>
+</html>

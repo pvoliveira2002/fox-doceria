@@ -1,0 +1,108 @@
+Crie um site institucional moderno para uma doceria chamada Fox Doceria, inspirado nas cores da logo enviada (tons de vermelho, laranja avermelhado, bege claro e detalhes em azul suave).
+
+O objetivo do site NÃO é realizar vendas online. O site deve funcionar como uma vitrine digital para apresentar os produtos e atrair clientes.
+
+Estilo Visual
+Design moderno e elegante.
+Visual acolhedor e artesanal.
+Paleta de cores baseada na logo:
+Vermelho principal (#D83A2E aproximadamente)
+Bege claro (#F3DFCF aproximadamente)
+Vermelho escuro para detalhes.
+Azul claro suave para pequenos destaques.
+Bordas arredondadas.
+Sombras suaves.
+Layout responsivo para celular e computador.
+Seção Hero (Página Inicial)
+
+Exibir:
+
+Logo da Fox Doceria.
+Título:
+"Doces feitos com carinho para adoçar seus dias."
+Subtítulo:
+"Conheça nossos produtos e acompanhe os destaques da semana."
+Botão:
+"Ver Produtos"
+
+Utilizar uma imagem fictícia bonita de doces artesanais ao fundo.
+
+Seção: Destaque da Semana
+
+Título:
+"⭐ Destaque da Semana"
+
+Mostrar apenas um card de produto.
+
+Card contendo:
+
+Imagem fictícia de um doce.
+Nome do produto.
+Valor.
+Pequena descrição.
+
+Exemplo:
+Nome: Bolo de Chocolate Especial
+Valor: R$ 5,00
+Descrição: Nosso bolo mais vendido da semana.
+
+Seção: Nossos Produtos
+
+Título:
+"🍰 Conheça nossos produtos"
+
+Exibir cards organizados em grade.
+
+Cada card deve conter:
+
+Imagem fictícia.
+Nome do produto.
+Preço.
+Pequena descrição.
+
+Produtos:
+
+Torta de Limão (Sem Chantili)
+Valor: R$ 4,00
+Torta de Limão (Com Chantili)
+Valor: R$ 4,50
+Bolo de Chocolate
+Valor: R$ 5,00
+Bolo de Cenoura
+Valor: R$ 5,00
+Brownie
+Valor: R$ 4,00
+
+Criar descrições curtas e atrativas para cada produto.
+
+Seção: Onde Encontrar
+
+Título:
+"📍 Onde Comprar"
+
+Texto:
+
+"Todos os nossos produtos são vendidos no Colégio Centro Educacional MAARA."
+
+Dias de venda:
+
+Quinta-feira
+Sexta-feira
+
+Adicionar um card informativo elegante destacando os dias de venda.
+
+Rodapé
+
+Exibir:
+
+Logo da Fox Doceria.
+Texto:
+"Feito com carinho pela Fox Doceria."
+Redes sociais (ícones fictícios).
+Direitos reservados.
+Extras
+Animações suaves ao rolar a página.
+Cards com efeito hover.
+Transições elegantes.
+Layout totalmente responsivo.
+Utilizar imagens temporárias de doces de alta qualidade até que as imagens reais sejam fornecidas.
