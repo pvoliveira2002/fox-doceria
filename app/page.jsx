@@ -1,3 +1,4 @@
+import { CakeSlice, Cookie, Flame, Heart, School, Star } from "lucide-react";
 import FoxInteractions from "./FoxInteractions";
 
 const featuredImage =
@@ -49,10 +50,26 @@ const products = [
 ];
 
 const reasons = [
-  ["🥧", "Ingredientes selecionados", "Doces pensados para entregar sabor e cuidado em cada pedaço."],
-  ["🍫", "Produção artesanal", "Receitas preparadas em pequenas fornadas, com atenção aos detalhes."],
-  ["🏫", "Venda presencial no MAARA", "Você encontra os produtos no intervalo de quinta e sexta."],
-  ["❤️", "Feito com dedicação", "Uma doceria jovem, carinhosa e feita para adoçar a rotina escolar."],
+  {
+    Icon: CakeSlice,
+    title: "Ingredientes selecionados",
+    text: "Doces pensados para entregar sabor e cuidado em cada pedaço.",
+  },
+  {
+    Icon: Cookie,
+    title: "Produção artesanal",
+    text: "Receitas preparadas em pequenas fornadas, com atenção aos detalhes.",
+  },
+  {
+    Icon: School,
+    title: "Venda presencial no MAARA",
+    text: "Você encontra os produtos no intervalo de quinta e sexta.",
+  },
+  {
+    Icon: Heart,
+    title: "Feito com dedicação",
+    text: "Uma doceria jovem, carinhosa e feita para adoçar a rotina escolar.",
+  },
 ];
 
 const gallery = [
@@ -136,7 +153,10 @@ export default function Home() {
               <img src={featuredImage} alt="Fatia de bolo de chocolate artesanal" />
             </div>
             <div className="featured-copy">
-              <span className="tag">🔥 Mais Vendido</span>
+              <span className="tag">
+                <Flame size={18} strokeWidth={2.6} aria-hidden="true" />
+                Mais Vendido
+              </span>
               <h3>Bolo de Chocolate Especial</h3>
               <p>
                 Nosso bolo mais vendido da semana: massa fofinha, cobertura cremosa e sabor
@@ -144,7 +164,12 @@ export default function Home() {
               </p>
               <div className="featured-meta">
                 <span>Apenas nesta semana.</span>
-                <span>★★★★★ 4.9/5</span>
+                <span className="rating">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} size={14} fill="currentColor" strokeWidth={2.4} aria-hidden="true" />
+                  ))}
+                  4.9/5
+                </span>
               </div>
               <strong>R$ 5,00</strong>
             </div>
@@ -187,9 +212,11 @@ export default function Home() {
             <h2>Feito com carinho para cada intervalo.</h2>
           </div>
           <div className="reason-grid">
-            {reasons.map(([icon, title, text]) => (
+            {reasons.map(({ Icon, title, text }) => (
               <article className="reason-card reveal" key={title}>
-                <span>{icon}</span>
+                <span>
+                  <Icon size={28} strokeWidth={2.2} aria-hidden="true" />
+                </span>
                 <h3>{title}</h3>
                 <p>{text}</p>
               </article>
@@ -272,15 +299,29 @@ export default function Home() {
           </div>
           <div className="footer-column">
             <h3>Horários</h3>
-            <p>Quinta-feira<br />Intervalo Escolar</p>
-            <p>Sexta-feira<br />Intervalo Escolar</p>
+            <p>
+              Quinta-feira
+              <br />
+              Intervalo Escolar
+            </p>
+            <p>
+              Sexta-feira
+              <br />
+              Intervalo Escolar
+            </p>
           </div>
           <div className="footer-column">
             <h3>Redes sociais</h3>
             <div className="social-links" aria-label="Redes sociais">
-              <a href="#" aria-label="Instagram">IG</a>
-              <a href="#" aria-label="TikTok">TT</a>
-              <a href="#" aria-label="WhatsApp">WA</a>
+              <a href="#" aria-label="Instagram">
+                IG
+              </a>
+              <a href="#" aria-label="TikTok">
+                TT
+              </a>
+              <a href="#" aria-label="WhatsApp">
+                WA
+              </a>
             </div>
           </div>
         </div>

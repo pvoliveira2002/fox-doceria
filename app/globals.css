@@ -324,6 +324,11 @@ a {
   animation: badgeGlow 3.4s ease-in-out infinite;
 }
 
+.tag svg {
+  flex: 0 0 auto;
+  margin-right: 8px;
+}
+
 .featured-copy h3 {
   color: var(--red-dark);
   font-size: clamp(1.75rem, 3vw, 2.65rem);
@@ -363,6 +368,14 @@ a {
   background: rgba(243, 223, 207, 0.72);
   font-size: 0.82rem;
   font-weight: 900;
+}
+
+.featured-meta .rating {
+  gap: 3px;
+}
+
+.featured-meta .rating svg {
+  color: #d94f7a;
 }
 
 .featured-card:hover {
@@ -513,7 +526,7 @@ a {
   margin-bottom: 18px;
   border-radius: 18px;
   background: rgba(217, 79, 122, 0.12);
-  font-size: 1.7rem;
+  color: var(--pink-accent);
 }
 
 .reason-card h3 {
