@@ -849,6 +849,10 @@ a {
   transition: transform 220ms ease, background-color 220ms ease;
 }
 
+.social-links svg {
+  display: block;
+}
+
 .social-links a:hover {
   background: var(--blue);
   transform: translateY(-3px);

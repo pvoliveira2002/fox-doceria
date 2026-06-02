@@ -99,6 +99,38 @@ const gallery = [
   },
 ];
 
+function WhatsAppIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        d="M19.05 4.91A9.76 9.76 0 0 0 12.08 2C6.66 2 2.25 6.41 2.25 11.83c0 1.73.45 3.42 1.32 4.91L2.16 22l5.38-1.37a9.8 9.8 0 0 0 4.54 1.15h.01c5.42 0 9.83-4.41 9.83-9.83a9.78 9.78 0 0 0-2.87-7.04ZM12.09 20.1h-.01a8.16 8.16 0 0 1-4.16-1.14l-.3-.18-3.19.81.85-3.1-.2-.32a8.13 8.13 0 0 1-1.25-4.34c0-4.55 3.7-8.25 8.25-8.25a8.18 8.18 0 0 1 5.84 2.43 8.2 8.2 0 0 1 2.42 5.94c0 4.55-3.7 8.15-8.25 8.15Zm4.52-6.17c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.17-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.57c.12.17 1.75 2.67 4.24 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.1-.23-.16-.48-.28Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+function InstagramIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" {...props}>
+      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="2" />
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
+      <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+    </svg>
+  );
+}
+
+function TwitterIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        d="M18.9 2.75h3.25l-7.1 8.11 8.35 10.39h-6.54l-5.12-6.31-5.86 6.31H2.63l7.59-8.66L2.2 2.75h6.7l4.63 5.78 5.37-5.78Zm-1.14 16.67h1.8L7.92 4.48H5.98l11.78 14.94Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -314,13 +346,13 @@ export default function Home() {
             <h3>Redes sociais</h3>
             <div className="social-links" aria-label="Redes sociais">
               <a href="#" aria-label="Instagram">
-                IG
+                <InstagramIcon width={20} height={20} />
               </a>
-              <a href="#" aria-label="TikTok">
-                TT
+              <a href="#" aria-label="Twitter">
+                <TwitterIcon width={20} height={20} />
               </a>
               <a href="#" aria-label="WhatsApp">
-                WA
+                <WhatsAppIcon width={20} height={20} />
               </a>
             </div>
           </div>
